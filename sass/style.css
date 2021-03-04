@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #c8d6e5;
+  background-color: white;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -31,11 +31,39 @@ header {
   color: white;
 }
 
+.container {
+  border: 0px dashed red;
+}
+
 .container-own {
   border: 0px dashed red;
   max-width: 1100px;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
+}
+
+.row {
+  border: 0px dotted blue;
+  margin: 40px 0;
+}
+
+[class^="col-"] {
+  border: 0px dotted brown;
+  padding-top: 20px;
+}
+
+.section-title {
+  border: 0px dotted orange;
+  font-size: 35px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.section-subtitle {
+  border: 0px dotted orange;
+  font-family: "Akaya Kanadaka", cursive;
+  font-size: 20px;
+  margin: 0;
 }
 
 /* NAV-BAR */
@@ -45,6 +73,7 @@ header {
   flex-wrap: wrap;
   /*zawija pasek po zmniejszeniu okna*/
   justify-content: space-between;
+  padding-top: 10px;
 }
 
 .navigation-bar .navigation-bar-left {
@@ -170,4 +199,28 @@ header {
 .splash .splash-inner .btn:hover {
   color: black;
   border-color: black;
+}
+
+/* SERVICES */
+.services i {
+  font-size: 40px;
+  background-color: inherit;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  margin: 0 auto;
+  color: #f9ca24;
+  border: 3px solid #f9ca24;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.services .box-title {
+  font-size: 20px;
+}
+
+.services .box-text {
+  font-family: "Akaya Kanadaka", cursive;
+  font-size: 16px;
+  font-weight: 300px;
 }
