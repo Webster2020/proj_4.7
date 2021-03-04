@@ -1,0 +1,39 @@
+/* GLOBAL */
+
+$font-one: 'Poppins', sans-serif;
+$font-two: 'Akaya Kanadaka', cursive;
+
+$color-one:black;
+$color-two:white;
+$color-three:#f9ca24;
+$color-four:#c8d6e5;
+
+$transition: all 1s;
+
+$border-width: 2px;
+
+$border-sec: $border-width solid yellow;
+$border-cont: $border-width solid red;
+$border-cont-inn: $border-width dotted white;
+$border-cont-inn-elem: $border-width dashed blue;
+$border-cont-inn-elem-tit: $border-width dashed green;
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+  background-color: $color-two;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: $font-one;
+  color: $color-one;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+section {
+  border: $border-sec;
+  padding-top: 100px;
+}
