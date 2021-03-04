@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: #c8d6e5;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -12,11 +12,163 @@ body {
   color: black;
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.7;
 }
 
 section {
-  border: 2px solid yellow;
-  padding-top: 100px;
+  border: 0px solid yellow;
+  margin-bottom: 100px;
 }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxXQUFBO0FBb0JBO0VBQ0Msc0JBQXNCO0FDbEJ2Qjs7QURxQkE7RUFDRSx1QkFuQmM7RUFvQmQsU0FBUztFQUNULFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsa0NBM0I4QjtFQTRCOUIsWUF6QmM7RUEwQmQsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQixnQkFBZ0I7QUNsQmxCOztBRG9CQTtFQUNFLHdCQXRCcUM7RUF1QnJDLGtCQUFrQjtBQ2pCcEIiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
+
+header {
+  border: 0px solid green;
+  height: 100vh;
+  position: relative;
+  background-image: url(https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 100px;
+  color: white;
+}
+
+.container-own {
+  border: 0px dashed red;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAV-BAR */
+.navigation-bar {
+  border: 0px dotted blue;
+  display: flex;
+  flex-wrap: wrap;
+  /*zawija pasek po zmniejszeniu okna*/
+  justify-content: space-between;
+}
+
+.navigation-bar .navigation-bar-left {
+  border: 0px dotted brown;
+  color: #f9ca24;
+}
+
+.navigation-bar .navigation-bar-left i {
+  border: 0px dotted orange;
+  float: left;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.navigation-bar .navigation-bar-left p {
+  border: 0px dotted orange;
+  float: left;
+  margin: 0;
+  font-family: "Akaya Kanadaka", cursive;
+  font-size: 20px;
+  transition: all 1s;
+}
+
+.navigation-bar .navigation-bar-left p:hover {
+  color: black;
+}
+
+.navigation-bar .navigation-bar-right {
+  border: 0px dotted brown;
+  /*--menu I poziomu--*/
+}
+
+.navigation-bar .navigation-bar-right .menu-first {
+  border: 0px dotted sliver;
+  margin: 0;
+  padding-left: 0;
+}
+
+.navigation-bar .navigation-bar-right .menu-first li {
+  border: 0px dotted orange;
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
+  /*--menu II poziomu--*/
+}
+
+.navigation-bar .navigation-bar-right .menu-first li:hover {
+  /*--menu II poziomu--*/
+}
+
+.navigation-bar .navigation-bar-right .menu-first li:hover .menu-second {
+  display: block;
+}
+
+.navigation-bar .navigation-bar-right .menu-first li a {
+  text-decoration: none;
+  color: white;
+  transition: all 1s;
+}
+
+.navigation-bar .navigation-bar-right .menu-first li a:hover {
+  color: black;
+}
+
+.navigation-bar .navigation-bar-right .menu-first li .menu-second {
+  display: none;
+  position: absolute;
+  left: -41px;
+  top: 20px;
+}
+
+.navigation-bar .navigation-bar-right .menu-first li .menu-second li {
+  display: block;
+  margin: 8px 0;
+  text-align: left;
+}
+
+/* SPLASH */
+.splash {
+  position: relative;
+  height: 50%;
+}
+
+.splash .splash-inner {
+  border: 0px dashed red;
+  position: absolute;
+  width: 100%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.splash .splash-inner h1 {
+  margin: 15px;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.splash .splash-inner h2 {
+  margin: 5px;
+  font-family: "Akaya Kanadaka", cursive;
+  font-size: 35px;
+  line-height: 1.1;
+}
+
+.splash .splash-inner .btn {
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  background-color: #f9ca24;
+  border: 2px solid #f9ca24;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+  transition: all 1s;
+}
+
+.splash .splash-inner .btn:hover {
+  color: black;
+  border-color: black;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxXQUFBO0FBc0JBO0VBQ0Msc0JBQXNCO0FDcEJ2Qjs7QUR1QkE7RUFDRSx5QkFuQmlCO0VBb0JqQixTQUFTO0VBQ1QsVUFBVTtFQUNWLGtCQUFrQjtFQUNsQixrQ0E3QjhCO0VBOEI5QixZQTNCYztFQTRCZCxlQUFlO0VBQ2YsZ0JBQWdCO0FDcEJsQjs7QURzQkE7RUFDRSx3QkF2QnFDO0VBd0JyQyxvQkFBb0I7QUNuQnRCOztBRHFCQTtFQUNFLHVCQTVCbUM7RUE2Qm5DLGFBQWE7RUFDYixrQkFBa0I7RUFDbEIsb0lBQW9JO0VBQ3BJLGtDQUFrQztFQUNsQyxzQkFBc0I7RUFDdEIsNEJBQTRCO0VBQzVCLG9CQUFvQjtFQUNwQixZQTNDYztBQ3lCaEI7O0FEb0JBO0VBQ0Usc0JBckNvQztFQXNDcEMsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCxrQ0FyRDhCO0FDb0NoQzs7QURvQkEsWUFBQTtBQUVBO0VBQ0UsdUJBN0N5QztFQThDekMsYUFBYTtFQUNiLGVBQWU7RUFBRSxvQ0FBQTtFQUNqQiw4QkFBOEI7QUNqQmhDOztBRGFBO0VBTUksd0JBakQ0QztFQWtENUMsY0E1RGdCO0FDNkNwQjs7QURRQTtFQVNNLHlCQWxEcUQ7RUFtRHJELFdBQVc7RUFDWCxlQUFlO0VBQ2Ysa0JBQWtCO0FDYnhCOztBRENBO0VBZU0seUJBeERxRDtFQXlEckQsV0FBVztFQUNYLFNBQVM7RUFDVCxzQ0EzRThCO0VBNEU5QixlQUFlO0VBQ2Ysa0JBdEVhO0FDMERuQjs7QURSQTtFQXNCUSxZQTdFUTtBQ21FaEI7O0FEWkE7RUEyQkksd0JBdEU0QztFQXVFNUMscUJBQUE7QUNYSjs7QURqQkE7RUE4Qk0seUJBeEVnRDtFQXlFaEQsU0FBUztFQUNULGVBQWU7QUNUckI7O0FEdkJBO0VBa0NRLHlCQTNFbUQ7RUE0RW5ELHFCQUFxQjtFQUNyQixrQkFBa0I7RUFDbEIsaUJBQWlCO0VBZWpCLHNCQUFBO0FDckJSOztBRC9CQTtFQXVDVSxzQkFBQTtBQ0pWOztBRG5DQTtFQXlDWSxjQUFjO0FDRjFCOztBRHZDQTtFQTZDVSxxQkFBcUI7RUFDckIsWUFwR007RUFxR04sa0JBakdTO0FDK0ZuQjs7QUQ3Q0E7RUFpRFksWUF4R0k7QUN3R2hCOztBRGpEQTtFQXNEVSxhQUFhO0VBQ2Isa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxTQUFTO0FDRG5COztBRHhEQTtFQTJEWSxjQUFjO0VBQ2QsYUFBYTtFQUNiLGdCQUFnQjtBQ0M1Qjs7QURPQSxXQUFBO0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsV0FBVztBQ0xiOztBREdBO0VBSUksc0JBeEhrQztFQXlIbEMsa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxRQUFRO0VBQ1IsU0FBUztFQUNULGdDQUErQjtFQUMvQixhQUFhO0FDSGpCOztBRFBBO0VBWU0sWUFBWTtFQUNaLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FDRHRCOztBRGRBO0VBa0JNLFdBQVc7RUFDWCxzQ0FuSjhCO0VBb0o5QixlQUFlO0VBQ2YsZ0JBQWdCO0FDQXRCOztBRHJCQTtFQXdCTSxjQUFjO0VBQ2QsY0FBYztFQUNkLFlBQVk7RUFDWixxQkFBcUI7RUFDckIsZUFBZTtFQUNmLFlBMUpVO0VBMkpWLHlCQTFKYztFQTJKZCx5QkEzSmM7RUE0SmQsa0JBQWtCO0VBQ2xCLFlBQVk7RUFDWixZQUFZO0VBQ1osa0JBNUphO0FDNkpuQjs7QURwQ0E7RUFxQ1EsWUFuS1E7RUFvS1IsbUJBcEtRO0FDdUtoQiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
