@@ -15,12 +15,12 @@ body {
 }
 
 section {
-  border: 2px solid yellow;
+  border: 0px solid yellow;
   margin-bottom: 100px;
 }
 
 header {
-  border: 2px solid green;
+  border: 0px solid green;
   height: 100vh;
   position: relative;
   background-image: url(https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
@@ -32,11 +32,11 @@ header {
 }
 
 .container {
-  border: 2px dashed red;
+  border: 0px dashed red;
 }
 
 .container-own {
-  border: 2px dashed red;
+  border: 0px dashed red;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 15px;
@@ -44,17 +44,17 @@ header {
 }
 
 .row {
-  border: 2px dotted blue;
+  border: 0px dotted blue;
   margin: 40px 0;
 }
 
 [class^="col-"] {
-  border: 2px dashed brown;
+  border: 0px dashed brown;
   padding-top: 20px;
 }
 
 .section-title {
-  border: 2px dotted orange;
+  border: 0px dotted orange;
   font-family: "Nunito Sans", sans-serif;
   font-size: 35px;
   font-weight: 900;
@@ -62,26 +62,26 @@ header {
 }
 
 .section-subtitle {
-  border: 2px dotted orange;
+  border: 0px dotted orange;
   font-family: "Akaya Kanadaka", cursive;
   font-size: 20px;
   margin: 0;
 }
 
 .box {
-  border: 2px dotted purple;
+  border: 0px dotted purple;
   background-color: #f9ca24;
   padding: 0;
 }
 
 .box-title {
-  border: 2px dotted orange;
+  border: 0px dotted orange;
   font-family: "Nunito Sans", sans-serif;
   font-size: 20px;
 }
 
 .box-text {
-  border: 2px dotted orange;
+  border: 0px dotted orange;
   font-family: "Akaya Kanadaka", cursive;
   font-size: 16px;
   font-weight: 300px;
@@ -90,7 +90,7 @@ header {
 
 /* NAV-BAR */
 .navigation-bar {
-  border: 2px dotted blue;
+  border: 0px dotted blue;
   display: flex;
   flex-wrap: wrap;
   /*zawija pasek po zmniejszeniu okna*/
@@ -99,19 +99,19 @@ header {
 }
 
 .navigation-bar .navigation-bar-left {
-  border: 2px dashed brown;
+  border: 0px dashed brown;
   color: #f9ca24;
 }
 
 .navigation-bar .navigation-bar-left i {
-  border: 2px dotted orange;
+  border: 0px dotted orange;
   float: left;
   font-size: 24px;
   margin-right: 10px;
 }
 
 .navigation-bar .navigation-bar-left p {
-  border: 2px dotted orange;
+  border: 0px dotted orange;
   float: left;
   margin: 0;
   font-family: "Akaya Kanadaka", cursive;
@@ -124,18 +124,18 @@ header {
 }
 
 .navigation-bar .navigation-bar-right {
-  border: 2px dashed brown;
+  border: 0px dashed brown;
   /*--menu I poziomu--*/
 }
 
 .navigation-bar .navigation-bar-right .menu-first {
-  border: 2px dotted purple;
+  border: 0px dotted purple;
   margin: 0;
   padding-left: 0;
 }
 
 .navigation-bar .navigation-bar-right .menu-first li {
-  border: 2px dotted orange;
+  border: 0px dotted orange;
   display: inline-block;
   position: relative;
   margin-right: 5px;
@@ -180,7 +180,7 @@ header {
 }
 
 .splash .splash-inner {
-  border: 2px dashed red;
+  border: 0px dashed red;
   position: absolute;
   width: 100%;
   top: 55%;
@@ -240,12 +240,12 @@ header {
 
 /* PORTFOLIO */
 .portfolio .single-img {
-  border: 2px dotted purple;
+  border: 0px dotted purple;
   width: 100%;
 }
 
 .portfolio .single-img img {
-  border: 2px dotted orange;
+  border: 0px dotted orange;
   width: 100%;
 }
 
@@ -266,4 +266,29 @@ footer i {
   border: 3px solid black;
   border-radius: 50%;
   text-align: center;
+}
+
+@media (max-width: 490px) {
+  /*nav-bar*/
+  .navigation-bar .navigation-bar-left i {
+    font-size: 57px;
+    margin-right: 25px;
+  }
+  .navigation-bar .navigation-bar-left p {
+    font-size: 50px;
+  }
+  .navigation-bar .navigation-bar-right {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .navigation-bar .navigation-bar-right .menu-first li .menu-second {
+    top: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  /*footer*/
+  .b-first {
+    order: -1;
+  }
 }

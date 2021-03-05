@@ -11,7 +11,7 @@ $color-four:#c8d6e5;
 
 $transition: all 1s;
 
-$border-width: 2px;
+$border-width: 0px;
 $border-hd: $border-width solid green;
 $border-sec: $border-width solid yellow;
 $border-cont: $border-width dashed red;
@@ -266,5 +266,37 @@ footer {
     border: 3px solid $color-one;
     border-radius: 50%;
     text-align: center;
+  }
+}
+
+@media (max-width: 490px) {
+  /*nav-bar*/
+  .navigation-bar {
+    .navigation-bar-left {
+      i {
+        font-size: 57px;
+        margin-right: 25px;;
+      }
+      p {
+        font-size: 50px;
+      }
+    }
+    .navigation-bar-right {
+      margin-top: 10px;
+      font-size: 18px;
+      .menu-first {
+        li {
+          .menu-second {
+            top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  /*footer*/
+  .b-first {
+    order: -1;
   }
 }
